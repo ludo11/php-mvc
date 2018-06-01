@@ -1,0 +1,34 @@
+{
+  "/": "UsersController:getHome",
+  "/inscription": {
+                  "GET":"UsersController:inscription"
+                  },
+    
+  "/user/update/:id":{
+                  "GET": "UsersController:updateProfil"
+                     },
+
+  "/contact": "UsersController:contact",
+  "/api/users":{
+                  "GET":"UsersController:getAll",
+                  "DELETE":"UsersController:deleteAll",
+                  "POST":"UsersController:create"
+                },                
+  "/api/users/:id":{
+                    "GET":"UsersController:getById",
+                    "PUT":"UsersController:update",
+                    "DELETE":"UsersController:delete"
+                  },
+                  
+    "/user/delete":{
+                  
+                  "POST":"UsersController:remove"
+                     },
+                  
+    "/user/delete/:id":{
+                  "GET": "UsersController:delete",
+                  "POST":"UsersController:remove"
+                     }
+}
+
+
